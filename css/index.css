@@ -1,0 +1,53 @@
+html{
+	
+	background-color:DarkSeaGreen;
+}
+h1{
+	
+	text-align: center;
+}
+h2{
+	
+	text-align: center;
+}
+h3{
+	
+	margin-top: 70px;
+	text-align: center;
+}
+h4{
+	
+	margin-top: 50px;
+	text-align: center;
+	
+}
+
+td{
+	padding : 10px;
+	margin: 10px;
+	
+}
+.forms{
+	
+	display:flex;
+	justify-content:center;
+}
+
+.forms1{
+	
+	
+	text-align: center;
+}
+
+.forms2{
+	
+	margin-top: 25px;
+	text-align: center;
+}
+
+input{
+	
+	margin-left:20px;
+}
+
+
