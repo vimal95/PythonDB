@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MYSQL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  </head>
+  <h1 class="title">Welcome to MySql Database</h1>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="home">
+            <li class="active"><a href="/">Home</a></li>
+            <br>
+            <li><a href="#">Sign In</a></li>
+            <br>
+ 	   
+          </ul>
+        </nav>
+      </div>
+      
+      <h2>Please Enter the details</h2>
+      
+      <form class="forms" method="POST" action = "http://localhost:5002/test">
+      <table>
+       <tr>
+       <td><label> Employee Name:  </label></td>
+       <td><input type="text" name="inputName"></td>
+       </tr>
+        <tr>
+       <td><label> Employee Role:  </label></td>
+       <td><input type="text" name="inputRole"></td>
+       </tr>
+       <tr>
+       <td><label> Employee Number: </label></td>
+       <td><input type="number" name="inputNumber"></td>
+       </tr>
+       <tr>
+       <td></td>
+       <td><p><input type = "submit" value = "submit" /></p></td>
+       </tr>
+      </table>
+        
+        
+        
+   </form>
+  
+  <h3>Search in Database</h3>
+  
+  <form class="forms1" method="POST" action="http://localhost:5002/search" >
+  
+  <input type="text" name="inputSearch"/>
+  <input type="submit" value="Search" />
+  
+  
+  </form>
+  
+  <h3>Fetch all Data</h3>
+  <form class="forms2" action="http://localhost:5002/fetch" >
+   <input type="submit" value="Fetchall" />
+   </form>
+   
+      <footer class="footer">
+        <p>&copy; Guidanz 2019</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
